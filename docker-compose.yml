@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  easy-ml-pipe:
+    image: 'at/easy-ml-pipe:latest'
+    build:
+      context: .
+      args:
+        PYTHON_IMAGE_TAG: "4.8.2"
+    command: '--help'
+    tty: true
